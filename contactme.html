@@ -4,28 +4,41 @@
 <head>
   <meta charset="utf-8">
   <title>Contact Me</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="hello.css">
 </head>
-<div class="navbar" id="menu">
 
-  <a href="portfolio.html">Home</a>
-  <a href="aboutme.html"> About Me </a>
-  <a href="contactme.html"> Contact Me </a>
+<body>
+  <div class="navbar" id="menu">
 
-</div>
-<h1> Get In Touch </h1>
-<form class="form">
-  <label> First Name </label>
-  <input type="text" value='first name'>
-  <br>
-  <label> Last Name </label>
-  <input type='text' value="last name">
-  <br>
-  <label> Number </label>
+    <a href="index.html">Home</a>
+    <a href="aboutme.html"> About Me </a>
+    <a class="active"> Contact Me </a>
 
-  <input type="number" value="phone number">
 
-  <body>
-  </body>
+  </div>
+
+  <h1 class="contact-h1"> Get In Touch </h1>
+  <div class="contact-form">
+
+
+    <form class="form">
+      <label> First Name </label>
+      <input type="text" placeholder='first name'>
+      <br>
+      <label> Last Name </label>
+      <input type='text' placeholder="last name">
+      <br>
+      <label> Number </label>
+      <input type="number" value="phone number" placeholder="phone number">
+      <br>
+      <label> Message </label>
+      <input class="submit-message" type="text" placeholder="Your message here">
+      <br>
+      <input class="submit-btn" type="submit" value="submit" href="#">
+  </div>
+
+
+</body>
 
 </html>

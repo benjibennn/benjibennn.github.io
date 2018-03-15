@@ -25,9 +25,14 @@ body {
   text-decoration: none;
   font-size: 25px;
   font-family: lato;
+  list-style: none;
 }
 
 .navbar a:hover {
+  background-color: #141414;
+}
+
+.active {
   background-color: #141414;
 }
 
@@ -93,13 +98,22 @@ Profile
   text-align: center;
 }
 
-.story-h2 {}
+/* About me
+
+*/
 
 .story {
   display: flex;
-  width: 110%;
+  width: 90%;
   justify-content: space-between;
   align-items: flex-start;
+  margin-top:100px;
+}
+
+.story-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
 
 .story-comment {}
@@ -143,9 +157,8 @@ h2, h3 {
   flex-direction: column;
   justify-content: space-between;
   background-color: lightslategrey;
+  opacity: 0.8;
 }
-
-
 
 .logo {
   width: 100px;
@@ -157,37 +170,51 @@ h2, h3 {
   transform: scale(1.2);
 }
 
-
-.logo1 p{
-  display: inline ;
-  margin-bottom: 50px;
-  position: relative;
-  bottom: 40px;
-
-}
-
-.logo2 p{
-  display: inline ;
-  margin-bottom: 50px;
-  position: relative;
-  bottom: 40px;
-
-
-}
-.logo3 p{
+.logo1 p {
   display: inline;
   margin-bottom: 50px;
   position: relative;
-  bottom: 40px;
-
-
 }
-.logo p{
+
+.logo2 p {
+  display: inline;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.logo3 p {
+  display: inline;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.logo p {
   color: skylightblue;
 }
 
 .language {
   display: inline-block;
+}
+
+/*
+Media Part
+
+*/
+
+@media(max-width: 512px) {
+  .navbar a {
+    font-size: 40px;
+  }
+  .story-img {
+    width: 300px;
+    height: 300px;
+  }
+  p {
+    font-size: 100px;
+  }
+  h3 {
+    font-size: 100px;
+  }
 }
 
 /*
@@ -197,10 +224,36 @@ CONTACT ME PAGE
 
 */
 
+.contact-h1 {
+  padding-top: 50px;
+}
+
+.contact-form {
+  display: flex;
+}
+
 .form {
-  color: white;
+  background-color: white;
+  opacity: 0.6;
+  width: 40%;
 }
 
 .form label {
-  color: white;
+  color: black;
+}
+
+label {
+  width: 10%;
+  padding: 12px 12px;
+}
+
+.submit-btn {
+  display: block;
+  margin-left: 50%;
+
+}
+
+.submit-message{
+  width: 300px;
+  height: 300px;
 }
